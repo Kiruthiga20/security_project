@@ -2,7 +2,7 @@ data "terraform_remote_state" "network" {
     backend = "remote"
 
     config = {
-        organization = "org-kplabs"
+        organization = "first-hcp-org"
 
         workspaces = {
           name = "network-project"
