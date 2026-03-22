@@ -5,5 +5,5 @@ data "tfe_outputs" "network" {
 
 output "network_public_ips" {
    description = "List of public ips fetched from security project"
-   value = data.tfe_outputs.network.outputs.public_ips
+   value = data.tfe_outputs.network.values.public_ips
 }
