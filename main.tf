@@ -1,14 +1,7 @@
-data "terraform_remote_state" "network" {
-    backend = "remote"
-
-    config = {
+data "tfe_outputs" "network" {
         organization = "first-hcp-org"
-
-        workspaces = {
-          name = "network-project"
+        workspace = "network-project"
         }
-    }
-}
 
 output "network_public_ips" {
    description = "List of public ips fetched from security project"
