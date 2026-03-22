@@ -1,6 +1,6 @@
 data "tfe_outputs" "network" {
         organization = "first-hcp-org"
-        workspace = "network-project"
+        workspace = "network_project"
         }
 
 output "network_public_ips" {
